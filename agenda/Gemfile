@@ -1,0 +1,8 @@
+source 'http://rubygems.org'
+
+gem 'mysql2'
+gem 'rails', '3.0.3'
+gem 'rspec'
+gem 'rspec-rails'
+gem 'devise'
+gem 'simple_form'
