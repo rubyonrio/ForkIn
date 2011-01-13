@@ -1,0 +1,4 @@
+<% if @item.valid? %>
+  $("#items").remove("<%= escape_javascript(render(@item)) %>");
+  $("#<%= dom_id(@item) %>").hide('clip');
+<% end %>

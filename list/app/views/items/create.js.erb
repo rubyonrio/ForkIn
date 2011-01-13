@@ -1,0 +1,4 @@
+<% if @item.valid? %>
+  $("#items").append("<%= escape_javascript(render(@item)) %>");
+  $("#<%= dom_id(@item) %>").show('clip');
+<% end %>

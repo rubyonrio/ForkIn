@@ -1,0 +1,9 @@
+<h1>Listing items</h1>
+
+<%= render :partial => "form", :locals => {:item => Item.new} %>
+
+<%= render @items || "No items found yet." %>
+
+<br />
+
+<%= link_to 'New Item', new_item_path %>
