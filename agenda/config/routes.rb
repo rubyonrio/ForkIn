@@ -3,6 +3,8 @@ Agenda::Application.routes.draw do
 
   resources :people
   
+  resources :users
+  
   
   root :to => "home#index"
 

@@ -1,0 +1,17 @@
+Users
+
+<table>
+  <tr>
+    <th><%= I18n.t :image %></th>
+    <th><%= I18n.t :email %></th>
+  </tr>
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= image_tag avatar_url(user) %></td>
+      <td><%= user.email %></td>      
+    </tr>
+  <% end %>
+</table>
+
+<p><%#= link_to I18n.t(:new_user), new_user_path %></p>
+
