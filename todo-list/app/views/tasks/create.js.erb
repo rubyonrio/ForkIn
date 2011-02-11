@@ -1,0 +1,3 @@
+<% if @task.valid? %>
+   $(".task").append("<%= escape_javascript(render(@task)) %>");
+<% end %>

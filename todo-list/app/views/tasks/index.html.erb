@@ -1,0 +1,18 @@
+<h1>Listing tasks</h1>
+
+<div class="task">
+<% @tasks.each do |task| %>
+<%= task.done %> <%= task.name %>
+
+<%= link_to 'Show', task %>
+<%= link_to 'Edit', edit_task_path(task) %>
+<%= link_to 'Destroy', task, :confirm => 'Are you sure?', :method => :delete %>
+<br /><br />
+<% end %>
+</div>
+
+<br />
+
+<%= render :partial => "form" %>
+
+<%= link_to 'New Task', new_task_path %>
